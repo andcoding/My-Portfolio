@@ -25,14 +25,13 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-50 leading-[1.15]">
-            Yordy Martinez — Full-Stack Web Developer bridging{' '}
-            <span className="text-zinc-400">commercial CMS systems and modern React architecture.</span>
+            Yordy Martinez <br /> <span className="text-2xl font-size: var(--text-2xl); text-sky-400">Full-Stack Web Developer</span> <br />
+            <span className="text-zinc-400 text-xl font-size: var(--text-1xl);"> Building and supporting commercial websites with modern CMS and React technologies.</span>
           </h1>
 
-          <p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
-            5 years of experience building, refactoring, and maintaining high-traffic commercial platforms.
-            Focused on Next.js, TypeScript, PHP, WordPress, and PostgreSQL.
-          </p>
+          {/*<p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
+            5 years of experience developing, editing, and maintaining commercial websites using WordPress, React, Next.js, PHP, and TypeScript.
+          </p>*/}
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
