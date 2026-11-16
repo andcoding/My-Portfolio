@@ -68,15 +68,15 @@ export const PROJECTS: ProjectCaseStudy[] = [
     title: 'Cross-Device QA & Uptime Monitor',
     category: 'DevOps & Automation',
     summary:
-      'Automated Playwright and Python runner verifying HTTP status codes, capturing mobile/desktop screenshots, and archiving logs to AWS S3.',
+      'Automated Playwright and TypeScript runner verifying HTTP status codes, capturing mobile/desktop screenshots, and archiving logs to AWS S3.',
     problem:
       'Manually checking responsive layouts, lead forms, and script tags across dozens of commercial dealership sites after updates is time-consuming and error-prone.',
     architecture: [
-      'Engineered an automated browser runner using Python and Playwright to audit URLs across desktop (1440px) and mobile (390px) viewports.',
+      'Engineered an automated browser runner using TypeScript and Playwright to audit URLs across desktop (1440px) and mobile (390px) viewports.',
       'Added automated checks for HTTP 200 responses, broken asset links, and presence of critical GTM/GA4 tracking tags.',
       'Configured automated JSON report and screenshot uploads to an AWS S3 bucket triggered via GitHub Actions.',
     ],
-    stack: ['Python', 'Playwright', 'AWS S3', 'GitHub Actions'],
+    stack: ['TypeScript', 'Playwright', 'AWS S3', 'GitHub Actions'],
     repoUrl: 'https://github.com/andcoding',
     status: 'In Progress',
   },

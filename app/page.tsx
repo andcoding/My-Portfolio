@@ -25,8 +25,8 @@ export default function HomePage() {
           </div> */}
 
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-50 leading-[1.15]">
-            Yordy Martinez <br /> <span className="text-2xl font-size: var(--text-2xl); text-cyan-500">Full-Stack Web Developer <br /></span> 
-            <span className="text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight"> Building and supporting commercial websites with modern CMS and React technologies.</span>
+            Yordy Martinez <br /> <span className="text-2xl font-size: var(--text-2xl); text-violet-500">Full-Stack Web Developer <br /></span> 
+            <span className="text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight"> Building and supporting commercial websites with modern React technologies.</span>
           </h1>
 
           {/*<p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
               href="#projects"
-              className="px-5 py-2.5 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-secondary)] transition"
+              className="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-zinc-200 transition"
             >
               Explore Projects
             </a>
@@ -44,7 +44,7 @@ export default function HomePage() {
               href="https://github.com/andcoding"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-secondary)] transition"
+              className="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-zinc-200 transition"
             >
               GitHub (@andcoding)
             </a>
@@ -52,7 +52,7 @@ export default function HomePage() {
               href="https://linkedin.com/in/yordy-martinez-34693b168"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-secondary)] transition"
+              className="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-zinc-200 transition"
             >
               Linkedin
             </a>
@@ -63,13 +63,13 @@ export default function HomePage() {
         <section id="projects" className="space-y-8">
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-100">Selected Engineering Work</h2>
-            <p className="text-sm text-zinc-400 mt-1">Full-stack applications, custom WordPress plugins, and QA automation.</p>
+            <p className="text-sm text-zinc-400 mt-1">Full-stack applications, Next.js applications, custom WordPress plugins, and QA automation.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {PROJECTS.map((project) => (
               <article key={project.slug}
-               className="group rounded-xl bg-[var(--surface)] border border-[var(--border)] p-6 hover:border-[var(--accent)] transition-transform duration-300 ease-out motion-safe:hover:scale-[1.02] motion-safe:focus-within:scale-[1.02] hover:z-10 flex flex-col justify-between"
+               className="group rounded-xl bg-[var(--surface)] border border-[var(--border)] p-6 transition-transform duration-300 ease-out motion-safe:hover:scale-[1.02] motion-safe:focus-within:scale-[1.02] hover:z-10 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between text-xs mb-3">
