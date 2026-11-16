@@ -3,7 +3,7 @@ import { PROJECTS } from '@/lib/projects';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-blue-500/30">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] selection:bg-[var(--accent)]/30">
       {/* Top Navigation */}
       <header className="max-w-4xl mx-auto px-6 py-8 flex items-center justify-between border-b border-zinc-800/80">
         <Link href="/" className="font-mono text-sm font-bold tracking-tight text-zinc-100">
@@ -19,14 +19,14 @@ export default function HomePage() {
       <main className="max-w-4xl mx-auto px-6 py-16 space-y-24">
         {/* Typography-Driven Hero */}
         <section className="space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
+          {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             Available for Full-Stack & Front-End Roles
-          </div>
+          </div> */}
 
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-50 leading-[1.15]">
-            Yordy Martinez <br /> <span className="text-2xl font-size: var(--text-2xl); text-sky-400">Full-Stack Web Developer</span> <br />
-            <span className="text-zinc-400 text-xl font-size: var(--text-1xl);"> Building and supporting commercial websites with modern CMS and React technologies.</span>
+            Yordy Martinez <br /> <span className="text-2xl font-size: var(--text-2xl); text-cyan-500">Full-Stack Web Developer <br /></span> 
+            <span className="text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight"> Building and supporting commercial websites with modern CMS and React technologies.</span>
           </h1>
 
           {/*<p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
               href="#projects"
-              className="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-white transition"
+              className="px-5 py-2.5 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-secondary)] transition"
             >
               Explore Projects
             </a>
@@ -44,7 +44,7 @@ export default function HomePage() {
               href="https://github.com/andcoding"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm font-medium hover:border-zinc-700 hover:text-white transition"
+              className="px-5 py-2.5 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-secondary)] transition"
             >
               GitHub (@andcoding)
             </a>
@@ -52,9 +52,9 @@ export default function HomePage() {
               href="https://linkedin.com/in/yordy-martinez-34693b168"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm font-medium hover:border-zinc-700 hover:text-white transition"
+              className="px-5 py-2.5 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-secondary)] transition"
             >
-              LinkedIn
+              Linkedin
             </a>
           </div>
         </section>
@@ -68,9 +68,8 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {PROJECTS.map((project) => (
-              <article
-                key={project.slug}
-                className="group rounded-xl bg-zinc-900/60 border border-zinc-800/90 p-6 hover:border-zinc-700 transition flex flex-col justify-between"
+              <article key={project.slug}
+               className="group rounded-xl bg-[var(--surface)] border border-[var(--border)] p-6 hover:border-[var(--accent)] transition-transform duration-300 ease-out motion-safe:hover:scale-[1.02] motion-safe:focus-within:scale-[1.02] hover:z-10 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between text-xs mb-3">
@@ -151,7 +150,7 @@ export default function HomePage() {
           </div>
           <a
             href="mailto:noelnew90@gmail.com"
-            className="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-semibold hover:bg-blue-500 transition"
+            className="px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-secondary)] transition"
           >
             noelnew90@gmail.com
           </a>

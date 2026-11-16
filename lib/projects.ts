@@ -30,19 +30,19 @@ export const PROJECTS: ProjectCaseStudy[] = [
     status: 'In Progress',
   },
   {
-    slug: 'headless-dealership-storefront',
-    title: 'Headless Dealership Showcase',
+    slug: 'dealership-inventory-lead-platform',
+    title: 'Dealership Inventory & Lead Platform',
     category: 'Full-Stack Architecture',
     summary:
-      'Decoupled vehicle inventory storefront consuming WordPress REST API endpoints inside a server-rendered Next.js and TypeScript frontend.',
+      'Modern dealership platform for searchable vehicle inventory, detailed vehicle pages, customer inquiries, and protected lead management.',
     problem:
-      'Traditional monolithic WordPress dealership sites struggle with Core Web Vitals and instant search filtering when rendering dozens of high-resolution vehicle listings.',
+      'Dealership teams need a fast, searchable inventory experience that makes vehicle discovery simple for customers while centralizing inquiries for sales teams.',
     architecture: [
-      'Decoupled content management (WordPress backend) from presentation (Next.js App Router frontend) via typed API fetchers.',
-      'Implemented Incremental Static Regeneration (ISR) to cache inventory listings at the edge while keeping pricing updates fresh.',
-      'Built client-side multi-facet filtering (price range, make, year) in TypeScript with zero full-page reloads.',
+      'Built server-rendered inventory and Search Results Pages with Next.js App Router, TypeScript, and Tailwind CSS.',
+      'Designed PostgreSQL schemas for vehicles, vehicle images, customer leads, and admin users with Drizzle ORM.',
+      'Added validated inquiry workflows with Zod and a protected dashboard for managing inventory, images, and sales leads.',
     ],
-    stack: ['Next.js', 'TypeScript', 'WP REST API', 'Tailwind CSS'],
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Drizzle', 'Zod'],
     repoUrl: 'https://github.com/andcoding',
     status: 'In Progress',
   },

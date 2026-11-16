@@ -38,7 +38,7 @@ export default async function ProjectCaseStudyPage({ params }: ProjectPageProps)
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-blue-500/30">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] selection:bg-[var(--accent)]/30">
       {/* Top Bar */}
       <header className="max-w-3xl mx-auto px-6 py-8 flex items-center justify-between border-b border-zinc-800/80">
         <Link
@@ -55,9 +55,9 @@ export default async function ProjectCaseStudyPage({ params }: ProjectPageProps)
       {/* Case Study Content */}
       <main className="max-w-3xl mx-auto px-6 py-14 space-y-12">
         <section className="space-y-4">
-          <p className="font-mono text-xs uppercase tracking-wider text-blue-400">
+          <p className="font-mono text-xs uppercase tracking-wider text-[var(--accent-secondary)]">
             {project.category}
-          </p>
+         </p>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-50">
             {project.title}
           </h1>
@@ -66,24 +66,25 @@ export default async function ProjectCaseStudyPage({ params }: ProjectPageProps)
           </p>
 
           <div className="flex flex-wrap gap-3 pt-3">
-            <a
-              href={project.repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-white transition"
-            >
-              View Source Code ↗
-            </a>
-            {project.liveUrl && (
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-200 text-sm font-medium hover:border-zinc-700 transition"
-              >
-                Live Deployment ↗
-              </a>
-            )}
+                    {project.liveUrl && (
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-secondary)] transition"
+          >
+            Live Demo ↗
+          </a>
+        )}
+
+        <a
+          href={project.repoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 rounded-lg bg-[var(--surface)] border border-[var(--border)] text-[var(--foreground)] text-sm font-medium hover:border-[var(--accent)] transition"
+        >
+          View Source Code ↗
+        </a>
           </div>
         </section>
 
