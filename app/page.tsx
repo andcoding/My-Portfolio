@@ -7,7 +7,7 @@ export default function HomePage() {
       {/* Top Navigation */}
       <header className="max-w-4xl mx-auto px-6 py-8 flex items-center justify-between border-b border-zinc-800/80">
         <Link href="/" className="font-mono text-sm font-bold tracking-tight text-zinc-100">
-          yordy.dev
+          Yordy.dev
         </Link>
         <nav className="flex items-center gap-6 text-sm text-zinc-400">
           <a href="#projects" className="hover:text-zinc-100 transition">Projects</a>
@@ -24,9 +24,9 @@ export default function HomePage() {
             Available for Full-Stack & Front-End Roles
           </div> */}
 
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-50 leading-[1.15]">
-            Yordy Martinez <br /> <span className="text-2xl font-size: var(--text-2xl); text-violet-500">Full-Stack Web Developer <br /></span> 
-            <span className="text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight"> Building and supporting commercial websites with modern React technologies.</span>
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-50 leading-[1.15]">Yordy Martinez<br />
+            <span className="block text-2xl font-size: var(--text-2xl); text-violet-400 leading-none">Full Stack Web Developer</span> 
+            <span className="block text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight mt-2"> Building and supporting commercial websites with modern React technologies.</span>
           </h1>
 
           {/*<p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
