@@ -63,7 +63,7 @@ export default function HomePage() {
         <section id="projects" className="space-y-8">
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-100">Selected Engineering Work</h2>
-            <p className="text-sm text-zinc-400 mt-1">Full-stack applications, React, Next.js applications, custom WordPress plugins, and QA automation.</p>
+            <p className="text-sm text-zinc-300 mt-1">Full-stack applications, React, Next.js applications, custom WordPress plugins, and QA automation.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
