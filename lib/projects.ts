@@ -13,19 +13,30 @@ export interface ProjectCaseStudy {
 
 export const PROJECTS: ProjectCaseStudy[] = [
   {
-    slug: 'wp-automotive-inventory-plugin',
-    title: 'Custom Automotive Inventory Plugin',
-    category: 'Backend & CMS Engineering',
+    slug: 'scalable-home-goods-ecommerce-platform',
+    title: 'Scalable Home Goods Ecommerce Platform',
+    category: 'Ecommerce Engineering',
     summary:
-      'Custom WordPress plugin registering a Vehicles Custom Post Type, sanitized admin meta boxes for VIN and pricing data, and structured query filtering.',
+      'A scalable WooCommerce platform for a home goods retailer, featuring product variations, secure checkout, inventory management, customer accounts, and custom REST API integrations.',
     problem:
-      'Standard dealership themes rely on bloated third-party page builders or rigid feed importers that slow down database queries and complicate custom vehicle field management.',
+      'Home goods retailers need a reliable shopping experience that supports complex product catalogs, secure payments, accurate inventory, and efficient order operations as traffic grows.',
     architecture: [
-      'Registered a custom `vehicle` post type and hierarchical taxonomies (Make, Model, Body Style) using native WordPress hooks.',
-      'Built custom admin meta boxes with nonce verification, capability checks, and strict input sanitization for VIN, mileage, and MSRP.',
-      'Exposed clean REST API fields so vehicle inventory can be queried by external frontends or internal dealership widgets.',
+      'Built custom WooCommerce extensions in PHP for product workflows, inventory rules, order automation, and retailer-specific business logic.',
+      'Integrated secure payment processing, customer accounts, coupons, shipping, and tax rules using WooCommerce-compatible services.',
+      'Developed versioned REST API endpoints with authentication, permission checks, validation, pagination, and rate limiting for external integrations.',
+      'Applied caching, optimized product images, database indexing, CDN delivery, automated backups, and monitoring to improve reliability and performance.',
     ],
-    stack: ['PHP', 'WordPress Plugin API', 'MySQL', 'REST API'],
+    stack: [
+      'WordPress',
+      'WooCommerce',
+      'PHP',
+      'MySQL',
+      'REST API',
+      'Stripe',
+      'Redis',
+      'Docker',
+      'GitHub Actions',
+    ],
     repoUrl: 'https://github.com/andcoding',
     status: 'In Progress',
   },

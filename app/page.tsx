@@ -26,7 +26,7 @@ export default function HomePage() {
 
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-50 leading-[1.15]">Yordy Martinez<br />
             <span className="block text-2xl font-size: var(--text-2xl); text-violet-400 leading-none">Full Stack Web Developer</span> 
-            <span className="block text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight mt-2"> Building and supporting commercial websites with modern React technologies.</span>
+            <span className="block text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight mt-2"> Building and supporting commercial websites with modern React technologies and running automated tests with Playwright.</span>
           </h1>
 
           {/*<p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
@@ -63,7 +63,7 @@ export default function HomePage() {
         <section id="projects" className="space-y-8">
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-100">Selected Engineering Work</h2>
-            <p className="text-sm text-zinc-400 mt-1">Full-stack applications, Next.js applications, custom WordPress plugins, and QA automation.</p>
+            <p className="text-sm text-zinc-400 mt-1">Full-stack applications, React, Next.js applications, custom WordPress plugins, and QA automation.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
