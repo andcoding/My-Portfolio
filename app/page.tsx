@@ -25,7 +25,7 @@ export default function HomePage() {
           </div> */}
 
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-50 leading-[1.15]">Yordy Martinez<br />
-            <span className="block text-2xl font-size: var(--text-2xl); text-violet-400 leading-none">Full Stack Web Developer</span> 
+            <span className="block text-2xl font-size: var(--text-2xl); text-emerald-400 leading-none">Full Stack Web Developer</span> 
             <span className="block text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight mt-2"> Building and supporting commercial websites with modern React technologies and running automated tests with Playwright.</span>
           </h1>
 
@@ -63,7 +63,7 @@ export default function HomePage() {
         <section id="projects" className="space-y-8">
           <div>
             <h2 className="text-2xl font-bold tracking-tight text-zinc-100">Selected Engineering Work</h2>
-            <p className="text-sm text-zinc-300 mt-1">Full-stack applications, React, Next.js applications, custom WordPress plugins, and QA automation.</p>
+            <p className="text-sm text-zinc-300 mt-1">Full-stack applications,TypeScript, React, Next.js, Tailwind, custom WordPress plugins, and QA automation.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -80,7 +80,7 @@ export default function HomePage() {
                   </div>
 
                   <Link href={`/projects/${project.slug}`}>
-                    <h3 className="text-lg font-semibold text-zinc-100 group-hover:text-blue-400 transition mb-2">
+                    <h3 className="text-lg font-semibold text-zinc-100 group-hover:text-emerald-400 transition mb-2">
                       {project.title}
                     </h3>
                   </Link>
@@ -105,10 +105,11 @@ export default function HomePage() {
                   <div className="pt-3 border-t border-zinc-800/80 flex items-center justify-between text-xs font-medium">
                     <Link
                       href={`/projects/${project.slug}`}
-                      className="text-blue-400 hover:text-blue-300 transition"
+                      className="text-emerald-400 hover:text-emerald-300 transition"
                     >
                       Read Case Study →
                     </Link>
+
                     <a
                       href={project.repoUrl}
                       target="_blank"
@@ -150,7 +151,7 @@ export default function HomePage() {
           </div>
           <a
             href="mailto:noelnew90@gmail.com"
-            className="px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-secondary)] transition"
+            className="px-4 py-2 rounded-lg bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-500 transition"
           >
             noelnew90@gmail.com
           </a>
