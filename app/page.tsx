@@ -19,19 +19,11 @@ export default function HomePage() {
       <main className="max-w-4xl mx-auto px-6 py-16 space-y-24">
         {/* Typography-Driven Hero */}
         <section className="space-y-6">
-          {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            Available for Full-Stack & Front-End Roles
-          </div> */}
 
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-50 leading-[1.15]">Yordy Martinez<br />
             <span className="block text-2xl font-size: var(--text-2xl); text-[var(--accent-secondary)] leading-none">Full Stack Web Developer</span> 
-            <span className="block text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight mt-2"> Building and supporting commercial websites with modern React technologies and testing with Playwright automation.</span>
+            <span className="block text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight mt-2"> Building and supporting commercial websites with modern React technologies and Playwright for web testing and automation.</span>
           </h1>
-
-          {/*<p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
-            5 years of experience developing, editing, and maintaining commercial websites using WordPress, React, Next.js, PHP, and TypeScript.
-          </p>*/}
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
