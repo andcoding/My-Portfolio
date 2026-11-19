@@ -3,7 +3,7 @@ import { PROJECTS } from '@/lib/projects';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] selection:bg-[var(--accent)]/30">
+    <div className="jigsaw-background min-h-screen text-[var(--foreground)] selection:bg-[var(--accent)]/30;">
       {/* Top Navigation */}
       <header className="max-w-4xl mx-auto px-6 py-8 flex items-center justify-between border-b border-zinc-800/80">
         <Link href="/" className="font-mono text-sm font-bold tracking-tight text-zinc-100">
@@ -25,8 +25,8 @@ export default function HomePage() {
           </div> */}
 
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-50 leading-[1.15]">Yordy Martinez<br />
-            <span className="block text-2xl font-size: var(--text-2xl); text-emerald-400 leading-none">Full Stack Web Developer</span> 
-            <span className="block text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight mt-2"> Building and supporting commercial websites with modern React technologies and running automated tests with Playwright.</span>
+            <span className="block text-2xl font-size: var(--text-2xl); text-[var(--accent-secondary)] leading-none">Full Stack Web Developer</span> 
+            <span className="block text-zinc-400 text-xl font-size: var(--text-1xl); leading-tight mt-2"> Building and supporting commercial websites with modern React technologies and testing with Playwright automation.</span>
           </h1>
 
           {/*<p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
@@ -105,7 +105,7 @@ export default function HomePage() {
                   <div className="pt-3 border-t border-zinc-800/80 flex items-center justify-between text-xs font-medium">
                     <Link
                       href={`/projects/${project.slug}`}
-                      className="text-emerald-400 hover:text-emerald-300 transition"
+                      className="text-[var(--accent-secondary)] hover:text-emerald-300 transition"
                     >
                       Read Case Study →
                     </Link>

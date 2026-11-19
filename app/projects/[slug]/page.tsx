@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   const project = getProjectBySlug(slug);
 
   if (!project) {
-    return { title: 'Project Not Found | Yordy N. Martinez' };
+    return { title: 'Project Not Found | Yordy Martinez' };
   }
 
   return {
-    title: `${project.title} | Yordy N. Martinez`,
+    title: `${project.title} | Yordy Martinez`,
     description: project.summary,
   };
 }
@@ -38,7 +38,7 @@ export default async function ProjectCaseStudyPage({ params }: ProjectPageProps)
   }
 
   return (
-    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] selection:bg-[var(--accent)]/30">
+    <div className="jigsaw-background min-h-screen text-[var(--foreground)] selection:bg-[var(--accent)]/30">
       {/* Top Bar */}
       <header className="max-w-3xl mx-auto px-6 py-8 flex items-center justify-between border-b border-zinc-800/80">
         <Link
@@ -119,7 +119,7 @@ export default async function ProjectCaseStudyPage({ params }: ProjectPageProps)
           <ul className="space-y-3 text-zinc-300">
             {project.architecture.map((point, index) => (
               <li key={index} className="flex items-start gap-3 leading-relaxed">
-                <span className="font-mono text-xs text-blue-400 mt-1.5">0{index + 1}</span>
+                <span className="font-mono text-xs text-[var(--accent-secondary)] mt-1.5">0{index + 1}</span>
                 <span className="text-zinc-400">{point}</span>
               </li>
             ))}
