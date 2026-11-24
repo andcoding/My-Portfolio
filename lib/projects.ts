@@ -6,6 +6,8 @@ export interface ProjectCaseStudy {
   problem: string;
   architecture: string[];
   stack: string[];
+  image: string;
+  imageAlt: string;
   repoUrl: string;
   liveUrl?: string;
   status: 'Live' | 'In Progress';
@@ -26,6 +28,8 @@ export const PROJECTS: ProjectCaseStudy[] = [
       'Developed versioned REST API endpoints with authentication, permission checks, validation, pagination, and rate limiting for external integrations.',
       'Applied caching, optimized product images, database indexing, CDN delivery, automated backups, and monitoring to improve reliability and performance.',
     ],
+    image: '/HomeGoodsEcommerce.jpeg',
+    imageAlt: 'Home goods ecommerce platform project preview',
     stack: [
       'WordPress',
       'WooCommerce',
@@ -53,6 +57,8 @@ export const PROJECTS: ProjectCaseStudy[] = [
       'Designed PostgreSQL schemas for vehicles, vehicle images, customer leads, and admin users with Drizzle ORM.',
       'Added validated inquiry workflows with Zod and a protected dashboard for managing inventory, images, and sales leads.',
     ],
+    image: '/Dealership Inventory & Lead Platform.jpeg',
+    imageAlt: 'Dealership inventory and lead management platform preview',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Drizzle', 'Zod'],
     repoUrl: 'https://github.com/andcoding',
     status: 'In Progress',
@@ -70,6 +76,8 @@ export const PROJECTS: ProjectCaseStudy[] = [
       'Built server-side data aggregation queries in Python/SQL to compute stage conversion rates and cycle times.',
       'Rendered interactive KPI summary cards and pipeline tables in Next.js with strict TypeScript interfaces.',
     ],
+    image: '/CRM Pipeline & Dashboard Medium.jpeg',
+    imageAlt: 'CRM pipeline and KPI dashboard project preview',
     stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Python'],
     repoUrl: 'https://github.com/andcoding',
     status: 'In Progress',
@@ -87,6 +95,8 @@ export const PROJECTS: ProjectCaseStudy[] = [
       'Added automated checks for HTTP 200 responses, broken asset links, and presence of critical GTM/GA4 tracking tags.',
       'Configured automated JSON report and screenshot uploads to an AWS S3 bucket triggered via GitHub Actions.',
     ],
+    image: '/CRM Pipeline & Dashboard.jpeg',
+    imageAlt: 'Cross-device QA and uptime monitoring project preview',
     stack: ['TypeScript', 'Playwright', 'AWS S3', 'GitHub Actions'],
     repoUrl: 'https://github.com/andcoding',
     status: 'In Progress',

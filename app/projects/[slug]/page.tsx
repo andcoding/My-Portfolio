@@ -7,6 +7,8 @@ interface ProjectPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const instant = false;
+
 // Pre-render all case study routes at build time
 export async function generateStaticParams() {
   return PROJECTS.map((project) => ({
