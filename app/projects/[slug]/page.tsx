@@ -79,14 +79,14 @@ export default async function ProjectCaseStudyPage({ params }: ProjectPageProps)
           </a>
         )}
 
-        <a
+        {/* <a
           href={project.repoUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 rounded-lg bg-[var(--surface)] border border-[var(--border)] text-[var(--foreground)] text-sm font-medium hover:border-[var(--accent)] transition"
         >
           View Source Code ↗
-        </a>
+        </a> */}
           </div>
         </section>
 

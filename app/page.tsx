@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FlowShader } from '@/components/shaders/flow-shader';
+// import { FlowShader } from '@/components/shaders/flow-shader';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { PROJECTS } from '@/lib/projects';
 
@@ -31,6 +31,7 @@ const services = [
 export default function HomePage() {
   return (
     <div className="jigsaw-background min-h-screen overflow-hidden text-[var(--foreground)] selection:bg-white/20">
+      {/* Temporarily disabled; keep the OGL background configuration for later.
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[900px] overflow-hidden"
@@ -48,6 +49,7 @@ export default function HomePage() {
           />
         </div>
       </div>
+      */}
 
       <header className="relative z-20 max-w-5xl mx-auto px-6 py-8 flex items-center justify-between border-b border-white/10">
         <Link href="/" className="font-mono text-sm font-bold tracking-tight text-zinc-100">
@@ -69,7 +71,7 @@ export default function HomePage() {
           <div className="max-w-3xl space-y-6">
           <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-400">Web Developer</p>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-zinc-50 leading-[0.98]">
-              Yordy Martinez
+              Yordy
             </h1>
             <p className="max-w-2xl text-xl sm:text-2xl leading-relaxed text-zinc-300">
               I build and support commercial websites, from responsive front-end experiences to analytics, integrations, QA, and ongoing maintenance.
@@ -78,12 +80,12 @@ export default function HomePage() {
               <a href="#projects" className="px-5 py-3 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-white transition">
                 Explore Projects
               </a>
-              <a href="https://github.com/andcoding" target="_blank" rel="noopener noreferrer" className="px-5 py-3 rounded-lg border border-white/15 bg-black/40 text-zinc-100 text-sm font-semibold hover:border-white/40 transition">
+              {/* <a href="https://github.com/andcoding" target="_blank" rel="noopener noreferrer" className="px-5 py-3 rounded-lg border border-white/15 bg-black/40 text-zinc-100 text-sm font-semibold hover:border-white/40 transition">
                 GitHub (@andcoding)
-              </a>
-              <a href="https://linkedin.com/in/yordy-martinez-34693b168" target="_blank" rel="noopener noreferrer" className="px-5 py-3 rounded-lg border border-white/15 bg-black/40 text-zinc-100 text-sm font-semibold hover:border-white/40 transition">
+              </a> */}
+              {/* <a href="https://linkedin.com/in/yordy-martinez-34693b168" target="_blank" rel="noopener noreferrer" className="px-5 py-3 rounded-lg border border-white/15 bg-black/40 text-zinc-100 text-sm font-semibold hover:border-white/40 transition">
                 LinkedIn
-              </a>
+              </a> */}
             </div>
           </div>
         </section>
@@ -124,7 +126,7 @@ export default function HomePage() {
                     </div>
                     <div className="pt-4 mt-5 border-t border-white/10 flex items-center justify-between text-xs font-medium">
                       <Link href={`/projects/${project.slug}`} className="text-zinc-200 hover:text-white transition">Read Case Study →</Link>
-                      <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition">GitHub ↗</a>
+                      {/* <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition">GitHub ↗</a> */}
                     </div>
                   </div>
                 </article>
@@ -152,7 +154,7 @@ export default function HomePage() {
                   <li>Desktop, tablet, and mobile breakpoint QA</li>
                   <li>Typography, spacing, and button alignment review</li>
                 </ul>
-                <a href="https://www.davesinclairford.com/" target="_blank" rel="noopener noreferrer" className="inline-block text-sm text-zinc-200 hover:text-white">Visit website ↗</a>
+                <a href="https://www.davesinclairford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400">Visit website <span aria-hidden="true">↗</span></a>
               </article>
 
               <article className="rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4">
@@ -167,7 +169,7 @@ export default function HomePage() {
                   <li>Kelley Blue Book CTA script implementation</li>
                   <li>Desktop/mobile form and script verification</li>
                 </ul>
-                <a href="https://www.futureford.com/" target="_blank" rel="noopener noreferrer" className="inline-block text-sm text-zinc-200 hover:text-white">Visit website ↗</a>
+                <a href="https://www.futureford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400">Visit website <span aria-hidden="true">↗</span></a>
               </article>
 
               <article className="rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4">
@@ -182,6 +184,7 @@ export default function HomePage() {
                   <li>Third-party automotive tool integrations</li>
                   <li>Cross-device formatting and QA review</li>
                 </ul>
+                <a href="https://www.haciendanissan.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400">Visit website <span aria-hidden="true">↗</span></a>
               </article>
             </div>
 
@@ -252,6 +255,7 @@ export default function HomePage() {
           </section>
 
           <footer id="contact" className="relative isolate overflow-hidden scroll-mt-8 rounded-3xl border border-white/10 bg-black/60 px-6 py-10 sm:px-10">
+            {/* Temporarily disabled; retain the footer shader settings.
             <div className="pointer-events-none absolute inset-0 -z-10 portfolio-backdrop-fallback shader-canvas opacity-80">
               <FlowShader
                 speed={[0.0, 0.1]}
@@ -261,15 +265,16 @@ export default function HomePage() {
                 fadeCy={0.1}
               />
             </div>
+            */}
             <div className="relative flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6">
               <div>
                 <p className="font-mono text-xs text-zinc-500 mb-3">Get in touch</p>
                 <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Let’s build and improve the web.</h2>
                 <p className="text-sm text-zinc-400 mt-3">Santiago de los Caballeros, DR · US Eastern Time</p>
               </div>
-              <a href="mailto:noelnew90@gmail.com" className="shrink-0 px-5 py-3 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-white transition">
+              {/* <a href="mailto:noelnew90@gmail.com" className="shrink-0 px-5 py-3 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-white transition">
                 noelnew90@gmail.com
-              </a>
+              </a> */}
             </div>
           </footer>
         </div>

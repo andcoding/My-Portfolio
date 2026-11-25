@@ -45,7 +45,7 @@ export function ThemeToggle(): ReactNode {
     });
   };
 
-  const isDark = resolvedTheme !== "light";
+  const isDark = resolvedTheme === "dark";
 
   return (
     <button

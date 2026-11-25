@@ -27,6 +27,9 @@ Restructured the portfolio for interview and recruiter use. The implementation a
 - Increased the shader brightness by approximately 30% while retaining the broad, black-dominant radial fade.
 - Added a working black/light theme toggle with persisted `next-themes` state, a circular view-transition reveal, and shader background synchronization.
 - Reduced top and footer shader brightness by approximately 15%.
+- Temporarily commented out the top and footer OGL shader markup while preserving its settings and implementation.
+- Temporarily commented out GitHub, LinkedIn, and email links on the homepage and GitHub source link on project details; retained project repository data and theme switching.
+- Set light mode as the default theme and restyled dealership website links as prominent, keyboard-accessible buttons.
 - Restructured the homepage with projects, commercial support, services, technical stack, and contact sections.
 - Added Dave Sinclair Ford, Future Ford Lincoln of Roseville, Hacienda Nissan, and the supplied dealership support links.
 - Added Google Tag Manager, Google Analytics, FTP, PageSpeed, Yoast, navigation maintenance, WordPress, and QA service language.
@@ -36,9 +39,9 @@ Restructured the portfolio for interview and recruiter use. The implementation a
 ### Project Image Mapping
 
 - `HomeGoodsEcommerce.jpeg` -> Scalable Home Goods Ecommerce Platform
-- `Dealership Inventory & Lead Platform.jpeg` -> Dealership Inventory & Lead Platform
+- `Dealership Inventory.png` -> Dealership Inventory & Lead Platform
 - `CRM Pipeline & Dashboard Medium.jpeg` -> CRM Pipeline & KPI Dashboard
-- `CRM Pipeline & Dashboard.jpeg` -> Cross-Device QA & Uptime Monitor
+- `Cross-Device QA & Uptime.jpeg` -> Cross-Device QA & Uptime Monitor
 
 The final CRM/QA image mapping should be confirmed if the two dashboard previews are intended for different projects.
 
