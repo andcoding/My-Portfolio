@@ -61,6 +61,10 @@ html.light .text-zinc-600 {
   color: #52525b;
 }
 
+html.light .site-navigation a:hover {
+  color: #111111;
+}
+
 html.light [class*="border-white"] {
   border-color: rgba(24, 24, 27, 0.12);
 }

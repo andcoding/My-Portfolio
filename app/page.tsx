@@ -56,11 +56,11 @@ export default function HomePage() {
           Yordy.dev
         </Link>
         <div className="flex items-center gap-3">
-          <nav aria-label="Primary navigation" className="flex items-center gap-3 text-xs sm:gap-5 sm:text-sm text-zinc-400">
-            <a href="#projects" className="hover:text-zinc-100 transition">Projects</a>
-            <a href="#support" className="hover:text-zinc-100 transition">Experience</a>
-            <a href="#services" className="hover:text-zinc-100 transition">Services</a>
-            <a href="#stack" className="hidden sm:inline hover:text-zinc-100 transition">Stack</a>
+          <nav aria-label="Primary navigation" className="site-navigation flex items-center gap-3 text-xs sm:gap-5 sm:text-sm text-zinc-400">
+            <a href="#projects" className="hover:text-zinc-500 transition">Projects</a>
+            <a href="#support" className="hover:text-zinc-500 transition">Experience</a>
+            <a href="#services" className="hover:text-zinc-500 transition">Services</a>
+            <a href="#stack" className="hidden sm:inline hover:text-zinc-500 transition">Stack</a>
           </nav>
           <ThemeToggle />
         </div>
@@ -198,8 +198,8 @@ export default function HomePage() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                 {maintainedSites.map(([name, url]) => (
-                  <a key={url} href={url} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-white/10 px-4 py-3 text-sm text-zinc-300 hover:border-white/30 hover:text-white transition">
-                    {name} <span aria-hidden="true" className="text-zinc-600">↗</span>
+                  <a key={url} href={url} target="_blank" rel="noopener noreferrer" className="group rounded-lg border border-white/10 px-4 py-3 text-sm text-zinc-300 hover:border-white/30 hover:text-white transition-colors">
+                    {name} <span aria-hidden="true" className="text-sky-400 transition-colors group-hover:text-sky-300">↗</span>
                   </a>
                 ))}
               </div>
@@ -226,7 +226,10 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {services.map(([title, description], index) => (
-                <article key={title} className="rounded-2xl border border-white/10 bg-[var(--surface)] p-6">
+                <article
+                  key={title}
+                  className="rounded-2xl border border-white/10 bg-[var(--surface)] p-6 transition-transform duration-300 motion-safe:hover:-translate-y-1"
+                >
                   <p className="font-mono text-xs text-zinc-600 mb-4">0{index + 1}</p>
                   <h3 className="text-lg font-semibold text-zinc-100 mb-2">{title}</h3>
                   <p className="text-sm leading-relaxed text-zinc-400">{description}</p>
