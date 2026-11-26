@@ -15,11 +15,11 @@ export interface ProjectCaseStudy {
 
 export const PROJECTS: ProjectCaseStudy[] = [
   {
-    slug: 'scalable-home-goods-ecommerce-platform',
-    title: 'Scalable Home Goods Ecommerce Platform',
+    slug: 'home-goods-ecommerce-platform',
+    title: 'Home Goods Ecommerce Platform',
     category: 'Ecommerce Engineering',
     summary:
-      'A scalable WooCommerce platform for a home goods retailer, featuring product variations, secure checkout, inventory management, customer accounts, and custom REST API integrations.',
+      'A WooCommerce platform for a home goods retailer, featuring product variations, secure checkout, inventory management, customer accounts, and custom REST API integrations.',
     problem:
       'Home goods retailers need a reliable shopping experience that supports complex product catalogs, secure payments, accurate inventory, and efficient order operations as traffic grows.',
     architecture: [
@@ -28,7 +28,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
       'Developed versioned REST API endpoints with authentication, permission checks, validation, pagination, and rate limiting for external integrations.',
       'Applied caching, optimized product images, database indexing, CDN delivery, automated backups, and monitoring to improve reliability and performance.',
     ],
-    image: '/HomeGoodsEcommerce.jpeg',
+    image: '/E-commerce1.jpeg',
     imageAlt: 'Home goods ecommerce platform project preview',
     stack: [
       'WordPress',
@@ -57,7 +57,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
       'Designed PostgreSQL schemas for vehicles, vehicle images, customer leads, and admin users with Drizzle ORM.',
       'Added validated inquiry workflows with Zod and a protected dashboard for managing inventory, images, and sales leads.',
     ],
-    image: '/Dealership Inventory.png',
+    image: '/DealershipInventory1.jpeg',
     imageAlt: 'Dealership inventory and lead management platform preview',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Drizzle', 'Zod'],
     repoUrl: 'https://github.com/andcoding',
@@ -76,7 +76,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
       'Built server-side data aggregation queries in Python/SQL to compute stage conversion rates and cycle times.',
       'Rendered interactive KPI summary cards and pipeline tables in Next.js with strict TypeScript interfaces.',
     ],
-    image: '/CRM Pipeline & Dashboard Medium.jpeg',
+    image: '/CRM-Pipeline1.jpeg',
     imageAlt: 'CRM pipeline and KPI dashboard project preview',
     stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Python'],
     repoUrl: 'https://github.com/andcoding',
@@ -95,7 +95,7 @@ export const PROJECTS: ProjectCaseStudy[] = [
       'Added automated checks for HTTP 200 responses, broken asset links, and presence of critical GTM/GA4 tracking tags.',
       'Configured automated JSON report and screenshot uploads to an AWS S3 bucket triggered via GitHub Actions.',
     ],
-    image: '/Cross-Device QA & Uptime.jpeg',
+    image: '/Cross-Device QA1.jpeg',
     imageAlt: 'Cross-device QA and uptime monitoring project preview',
     stack: ['TypeScript', 'Playwright', 'AWS S3', 'GitHub Actions'],
     repoUrl: 'https://github.com/andcoding',

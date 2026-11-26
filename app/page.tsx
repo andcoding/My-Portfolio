@@ -67,17 +67,17 @@ export default function HomePage() {
       </header>
 
       <main className="relative z-10 max-w-5xl mx-auto px-6">
-        <section className="relative isolate min-h-[520px] flex items-center py-20">
-          <div className="max-w-3xl space-y-6">
-          <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-400">Web Developer</p>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-zinc-50 leading-[0.98]">
-              Yordy
+        <section className="relative isolate grid grid-cols-1 items-center gap-12 py-16 sm:py-20 lg:min-h-[560px] lg:grid-cols-[minmax(0,1fr)_minmax(200px,238px)] lg:gap-16">
+          <div className="space-y-6">
+            <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-400">Web Developer</p>
+            <h1 className="text-5xl font-bold leading-[0.98] tracking-tight text-zinc-50 sm:text-6xl lg:text-7xl">
+              Yordy M.
             </h1>
-            <p className="max-w-2xl text-xl sm:text-2xl leading-relaxed text-zinc-300">
+            <p className="max-w-2xl text-xl leading-relaxed text-zinc-300 sm:text-2xl">
               I build and support commercial websites, from responsive front-end experiences to analytics, integrations, QA, and ongoing maintenance.
             </p>
             <div className="flex flex-wrap items-center gap-3 pt-2">
-              <a href="#projects" className="px-5 py-3 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-white transition">
+              <a href="#projects" className="rounded-lg bg-zinc-100 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-white">
                 Explore Projects
               </a>
               {/* <a href="https://github.com/andcoding" target="_blank" rel="noopener noreferrer" className="px-5 py-3 rounded-lg border border-white/15 bg-black/40 text-zinc-100 text-sm font-semibold hover:border-white/40 transition">
@@ -88,6 +88,18 @@ export default function HomePage() {
               </a> */}
             </div>
           </div>
+          <figure className="relative mx-auto w-full max-w-[224px] overflow-hidden rounded-[2rem] border border-white/15 bg-[var(--surface)] p-2 shadow-2xl shadow-black/30 sm:max-w-[252px] lg:max-w-none">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-[1.5rem]">
+              <Image
+                src="/YordyPic2.jpeg"
+                alt="Portrait of Yordy Martinez"
+                fill
+                sizes="(max-width: 640px) 224px, (max-width: 1024px) 252px, 238px"
+                priority
+                className="object-cover"
+              />
+            </div>
+          </figure>
         </section>
 
         <div className="space-y-24 pb-24">
@@ -142,7 +154,10 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-              <article className="rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4">
+              <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
+                <div className="relative -mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden rounded-t-2xl border-b border-white/10 bg-[var(--surface-muted)]">
+                  <Image src="/Dave Sinclair.png" alt="Screenshot of the Dave Sinclair Ford website" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
+                </div>
                 <div>
                   <p className="font-mono text-xs text-zinc-500">Landing page development</p>
                   <h3 className="text-xl font-semibold mt-2">Dave Sinclair Ford</h3>
@@ -157,7 +172,10 @@ export default function HomePage() {
                 <a href="https://www.davesinclairford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400">Visit website <span aria-hidden="true">↗</span></a>
               </article>
 
-              <article className="rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4">
+              <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
+                <div className="relative -mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden rounded-t-2xl border-b border-white/10 bg-[var(--surface-muted)]">
+                  <Image src="/Future ford Lincoln.png" alt="Screenshot of the Future Ford Lincoln website" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
+                </div>
                 <div>
                   <p className="font-mono text-xs text-zinc-500">Navigation & integrations</p>
                   <h3 className="text-xl font-semibold mt-2">Future Ford Lincoln of Roseville</h3>
@@ -172,7 +190,10 @@ export default function HomePage() {
                 <a href="https://www.futureford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400">Visit website <span aria-hidden="true">↗</span></a>
               </article>
 
-              <article className="rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4">
+              <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
+                <div className="relative -mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden rounded-t-2xl border-b border-white/10 bg-[var(--surface-muted)]">
+                  <Image src="/Hacienda Nissan.png" alt="Screenshot of the Hacienda Nissan website" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
+                </div>
                 <div>
                   <p className="font-mono text-xs text-zinc-500">Front-end maintenance</p>
                   <h3 className="text-xl font-semibold mt-2">Hacienda Nissan</h3>
