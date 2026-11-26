@@ -71,30 +71,30 @@ export default function HomePage() {
           <div className="space-y-6">
             <p className="font-mono text-xs uppercase tracking-[0.22em] text-zinc-400">Web Developer</p>
             <h1 className="text-5xl font-bold leading-[0.98] tracking-tight text-zinc-50 sm:text-6xl lg:text-7xl">
-              Yordy M.
+              Yordy Martinez
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed text-zinc-300 sm:text-2xl">
               I build and support commercial websites, from responsive front-end experiences to analytics, integrations, QA, and ongoing maintenance.
             </p>
-            <div className="flex flex-wrap items-center gap-3 pt-2">
-              <a href="#projects" className="rounded-lg bg-zinc-100 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-white">
-                Explore Projects
+            <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
+              <a href="#support" className="w-full rounded-lg bg-zinc-100 px-5 py-3 text-center text-sm font-semibold text-zinc-950 transition hover:bg-white motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02] motion-reduce:transition-none sm:w-auto">
+                Experience
               </a>
-              {/* <a href="https://github.com/andcoding" target="_blank" rel="noopener noreferrer" className="px-5 py-3 rounded-lg border border-white/15 bg-black/40 text-zinc-100 text-sm font-semibold hover:border-white/40 transition">
+              <a href="https://github.com/andcoding" target="_blank" rel="noopener noreferrer" className="w-full rounded-lg border border-white/15 bg-black/40 px-5 py-3 text-center text-sm font-semibold text-zinc-100 transition hover:border-white/40 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02] motion-reduce:transition-none sm:w-auto">
                 GitHub (@andcoding)
-              </a> */}
-              {/* <a href="https://linkedin.com/in/yordy-martinez-34693b168" target="_blank" rel="noopener noreferrer" className="px-5 py-3 rounded-lg border border-white/15 bg-black/40 text-zinc-100 text-sm font-semibold hover:border-white/40 transition">
+              </a>
+              <a href="https://linkedin.com/in/yordy-martinez-34693b168" target="_blank" rel="noopener noreferrer" className="w-full rounded-lg border border-white/15 bg-black/40 px-5 py-3 text-center text-sm font-semibold text-zinc-100 transition hover:border-white/40 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02] motion-reduce:transition-none sm:w-auto">
                 LinkedIn
-              </a> */}
+              </a>
             </div>
           </div>
-          <figure className="relative mx-auto w-full max-w-[224px] overflow-hidden rounded-[2rem] border border-white/15 bg-[var(--surface)] p-2 shadow-2xl shadow-black/30 sm:max-w-[252px] lg:max-w-none">
-            <div className="relative aspect-[3/4] overflow-hidden rounded-[1.5rem]">
+          <figure className="relative mx-auto w-full max-w-full overflow-hidden rounded-[2rem] border border-white/15 bg-[var(--surface)] p-2 shadow-2xl shadow-black/30 sm:max-w-[252px] lg:max-w-none">
+            <div className="relative aspect-[15/14] overflow-hidden rounded-[1.5rem] sm:aspect-[3/4]">
               <Image
                 src="/YordyPic2.jpeg"
                 alt="Portrait of Yordy Martinez"
                 fill
-                sizes="(max-width: 640px) 224px, (max-width: 1024px) 252px, 238px"
+                sizes="(max-width: 640px) calc(100vw - 3rem), (max-width: 1024px) 252px, 238px"
                 priority
                 className="object-cover"
               />
@@ -169,7 +169,7 @@ export default function HomePage() {
                   <li>Desktop, tablet, and mobile breakpoint QA</li>
                   <li>Typography, spacing, and button alignment review</li>
                 </ul>
-                <a href="https://www.davesinclairford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400">Visit website <span aria-hidden="true">↗</span></a>
+                <a href="https://www.davesinclairford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400 sm:w-fit">Visit website <span aria-hidden="true">↗</span></a>
               </article>
 
               <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
@@ -187,7 +187,7 @@ export default function HomePage() {
                   <li>Kelley Blue Book CTA script implementation</li>
                   <li>Desktop/mobile form and script verification</li>
                 </ul>
-                <a href="https://www.futureford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400">Visit website <span aria-hidden="true">↗</span></a>
+                <a href="https://www.futureford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400 sm:w-fit">Visit website <span aria-hidden="true">↗</span></a>
               </article>
 
               <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
@@ -205,7 +205,7 @@ export default function HomePage() {
                   <li>Third-party automotive tool integrations</li>
                   <li>Cross-device formatting and QA review</li>
                 </ul>
-                <a href="https://www.haciendanissan.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400">Visit website <span aria-hidden="true">↗</span></a>
+                <a href="https://www.haciendanissan.com/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400 sm:w-fit">Visit website <span aria-hidden="true">↗</span></a>
               </article>
             </div>
 
