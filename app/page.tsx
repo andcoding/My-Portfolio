@@ -20,7 +20,7 @@ const maintainedSites = [
 ] as const;
 
 const services = [
-  ['Website Development', 'WordPress, responsive layouts, custom pages, theme updates, and commercial site implementation.'],
+  ['Website Development', 'Front-end development with React and Next.js, responsive layouts, custom pages, WordPress theme updates, and commercial site implementation.'],
   ['Analytics & Tracking', 'Google Tag Manager, Google Analytics 4, tag QA, reporting setup, and third-party tracking scripts.'],
   ['Integrations & Exports', 'Automotive tools, REST integrations, FTP-based exports, and backend reporting workflows.'],
   ['Ongoing Maintenance', 'Content updates, navigation and menu changes, third-party script updates, bug fixes, and live-site support.'],
@@ -57,8 +57,8 @@ export default function HomePage() {
         </Link>
         <div className="flex items-center gap-3">
           <nav aria-label="Primary navigation" className="site-navigation flex items-center gap-3 text-xs sm:gap-5 sm:text-sm text-zinc-400">
-            <a href="#projects" className="hover:text-zinc-500 transition">Projects</a>
             <a href="#support" className="hover:text-zinc-500 transition">Experience</a>
+            <a href="#projects" className="hover:text-zinc-500 transition">Projects</a>
             <a href="#services" className="hover:text-zinc-500 transition">Services</a>
             <a href="#stack" className="hidden sm:inline hover:text-zinc-500 transition">Stack</a>
           </nav>
@@ -103,6 +103,95 @@ export default function HomePage() {
         </section>
 
         <div className="space-y-24 pb-24">
+          <section id="support" className="scroll-mt-8 space-y-8">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-zinc-500 mb-3">Commercial experience</p>
+              <h2 className="text-3xl font-bold tracking-tight text-zinc-100">Commercial Web Development</h2>
+              <p className="text-sm text-zinc-400 mt-2 max-w-3xl">Front-end development, live-site updates, integrations, reporting, performance, SEO, and cross-device quality assurance for active commercial websites.</p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+              <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
+                <div className="relative -mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden rounded-t-2xl border-b border-white/10 bg-[var(--surface-muted)]">
+                  <Image src="/Dave Sinclair.png" alt="Screenshot of the Dave Sinclair Ford website" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
+                </div>
+                <div>
+                  <p className="font-mono text-xs text-zinc-500">Homepage features & vendor integrations</p>
+                  <h3 className="text-xl font-semibold mt-2">Dave Sinclair Ford</h3>
+                </div>
+                <p className="text-sm leading-relaxed text-zinc-400">I built the “Straight Answers” homepage section and updated the “Quick Questions?” form before adding it. I regularly tested calls to action (CTAs) and checked page-load performance.</p>
+                <ul className="space-y-2 text-sm text-zinc-300">
+                  <li>Configured an export file with Price and Sale Price fields for third-party vendor feeds</li>
+                  <li>Collaborated on editing and removing CTAs from the used-vehicle search results page (SRP)</li>
+                </ul>
+                <a href="https://www.davesinclairford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400 sm:w-fit">Visit website <span aria-hidden="true">↗</span></a>
+              </article>
+
+              <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
+                <div className="relative -mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden rounded-t-2xl border-b border-white/10 bg-[var(--surface-muted)]">
+                  <Image src="/Future ford Lincoln.png" alt="Screenshot of the Future Ford Lincoln website" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
+                </div>
+                <div>
+                  <p className="font-mono text-xs text-zinc-500">Navigation & lead integrations</p>
+                  <h3 className="text-xl font-semibold mt-2">Future Ford Lincoln of Roseville</h3>
+                </div>
+                <p className="text-sm leading-relaxed text-zinc-400">I reorganized the primary navigation and implemented logic to display the Blue Advantage badge on eligible vehicles. I regularly tested CTA and banner behavior and checked page-load performance.</p>
+                <ul className="space-y-2 text-sm text-zinc-300">
+                  <li>Integrated three CTAs below the total price on the SRP</li>
+                  <li>Edited and scheduled homepage banners</li>
+                </ul>
+                <a href="https://www.futureford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400 sm:w-fit">Visit website <span aria-hidden="true">↗</span></a>
+              </article>
+
+              <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
+                <div className="relative -mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden rounded-t-2xl border-b border-white/10 bg-[var(--surface-muted)]">
+                  <Image src="/Hacienda Nissan.png" alt="Screenshot of the Hacienda Nissan website" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
+                </div>
+                <div>
+                  <p className="font-mono text-xs text-zinc-500">Front-end development & analytics</p>
+                  <h3 className="text-xl font-semibold mt-2">Hacienda Nissan</h3>
+                </div>
+                <p className="text-sm leading-relaxed text-zinc-400">I rebuilt the Jellybean vehicle menu on the homepage and updated the SRP pricing stack. I regularly tested CTA and banner behavior and checked page-load performance.</p>
+                <ul className="space-y-2 text-sm text-zinc-300">
+                  <li>Added Google Ads tags to the website</li>
+                  <li>Edited GA4 reporting to identify the SRPs and CTAs with the most clicks</li>
+                  <li>Integrated Edmunds analytics tags</li>
+                </ul>
+                <a href="https://www.haciendanissan.com/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400 sm:w-fit">Visit website <span aria-hidden="true">↗</span></a>
+              </article>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-black/30 p-6">
+              <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-5">
+                <div>
+                  <p className="font-mono text-xs text-zinc-500">Commercial dealership support</p>
+                  <h3 className="text-xl font-semibold mt-2">Additional maintained websites</h3>
+                </div>
+                <p className="text-xs text-zinc-500">Selected collaboration and maintenance portfolio</p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                {maintainedSites.map(([name, url]) => (
+                  <a key={url} href={url} target="_blank" rel="noopener noreferrer" className="group rounded-lg border border-white/10 px-4 py-3 text-sm text-zinc-300 hover:border-white/30 hover:text-white transition-colors">
+                    {name} <span aria-hidden="true" className="text-sky-400 transition-colors group-hover:text-sky-300">↗</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              {[
+                'GTM tags',
+                'GA4 reporting',
+                'FTP exports',
+                'Yoast SEO',
+                'PageSpeed audits',
+                'Navigation updates',
+              ].map((item) => (
+                <div key={item} className="rounded-xl border border-white/10 bg-[var(--surface)] px-3 py-4 text-sm text-zinc-300 text-center">{item}</div>
+              ))}
+            </div>
+          </section>
+
           <section id="projects" className="scroll-mt-8 space-y-8">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.18em] text-zinc-500 mb-3">Engineering work</p>
@@ -142,100 +231,6 @@ export default function HomePage() {
                     </div>
                   </div>
                 </article>
-              ))}
-            </div>
-          </section>
-
-          <section id="support" className="scroll-mt-8 space-y-8">
-            <div>
-              <p className="font-mono text-xs uppercase tracking-[0.18em] text-zinc-500 mb-3">Commercial experience</p>
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-100">Ongoing Website Support</h2>
-              <p className="text-sm text-zinc-400 mt-2 max-w-3xl">Front-end implementation, live-site maintenance, integrations, reporting, performance, SEO, and cross-device quality assurance for active commercial websites.</p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-              <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
-                <div className="relative -mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden rounded-t-2xl border-b border-white/10 bg-[var(--surface-muted)]">
-                  <Image src="/Dave Sinclair.png" alt="Screenshot of the Dave Sinclair Ford website" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
-                </div>
-                <div>
-                  <p className="font-mono text-xs text-zinc-500">Landing page development</p>
-                  <h3 className="text-xl font-semibold mt-2">Dave Sinclair Ford</h3>
-                </div>
-                <p className="text-sm leading-relaxed text-zinc-400">Developed and launched a Commercial Fleet landing page using theme templates and brand guidelines.</p>
-                <ul className="space-y-2 text-sm text-zinc-300">
-                  <li>Custom content containers and responsive media</li>
-                  <li>Commercial lead CTA integrations</li>
-                  <li>Desktop, tablet, and mobile breakpoint QA</li>
-                  <li>Typography, spacing, and button alignment review</li>
-                </ul>
-                <a href="https://www.davesinclairford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400 sm:w-fit">Visit website <span aria-hidden="true">↗</span></a>
-              </article>
-
-              <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
-                <div className="relative -mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden rounded-t-2xl border-b border-white/10 bg-[var(--surface-muted)]">
-                  <Image src="/Future ford Lincoln.png" alt="Screenshot of the Future Ford Lincoln website" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
-                </div>
-                <div>
-                  <p className="font-mono text-xs text-zinc-500">Navigation & integrations</p>
-                  <h3 className="text-xl font-semibold mt-2">Future Ford Lincoln of Roseville</h3>
-                </div>
-                <p className="text-sm leading-relaxed text-zinc-400">Restructured an active dealership platform and verified third-party lead and valuation integrations.</p>
-                <ul className="space-y-2 text-sm text-zinc-300">
-                  <li>Primary navigation restructuring</li>
-                  <li>Value My Vehicle lead form integration</li>
-                  <li>Kelley Blue Book CTA script implementation</li>
-                  <li>Desktop/mobile form and script verification</li>
-                </ul>
-                <a href="https://www.futureford.com/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400 sm:w-fit">Visit website <span aria-hidden="true">↗</span></a>
-              </article>
-
-              <article className="relative overflow-hidden rounded-2xl border border-white/10 bg-[var(--surface)] p-6 space-y-4 motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out motion-safe:hover:z-10 motion-safe:hover:-translate-y-1 motion-safe:hover:scale-[1.02]">
-                <div className="relative -mx-6 -mt-6 mb-2 aspect-[16/9] overflow-hidden rounded-t-2xl border-b border-white/10 bg-[var(--surface-muted)]">
-                  <Image src="/Hacienda Nissan.png" alt="Screenshot of the Hacienda Nissan website" fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover" />
-                </div>
-                <div>
-                  <p className="font-mono text-xs text-zinc-500">Front-end maintenance</p>
-                  <h3 className="text-xl font-semibold mt-2">Hacienda Nissan</h3>
-                </div>
-                <p className="text-sm leading-relaxed text-zinc-400">Collaborated on front-end development and ongoing technical maintenance of an active dealership website.</p>
-                <ul className="space-y-2 text-sm text-zinc-300">
-                  <li>Jellybean vehicle navigation rebuild</li>
-                  <li>Primary navigation and SRP refactoring</li>
-                  <li>Third-party automotive tool integrations</li>
-                  <li>Cross-device formatting and QA review</li>
-                </ul>
-                <a href="https://www.haciendanissan.com/" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-white hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400 sm:w-fit">Visit website <span aria-hidden="true">↗</span></a>
-              </article>
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-black/30 p-6">
-              <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-5">
-                <div>
-                  <p className="font-mono text-xs text-zinc-500">Commercial dealership support</p>
-                  <h3 className="text-xl font-semibold mt-2">Additional maintained websites</h3>
-                </div>
-                <p className="text-xs text-zinc-500">Selected collaboration and maintenance portfolio</p>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                {maintainedSites.map(([name, url]) => (
-                  <a key={url} href={url} target="_blank" rel="noopener noreferrer" className="group rounded-lg border border-white/10 px-4 py-3 text-sm text-zinc-300 hover:border-white/30 hover:text-white transition-colors">
-                    {name} <span aria-hidden="true" className="text-sky-400 transition-colors group-hover:text-sky-300">↗</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-              {[
-                'GTM tags',
-                'GA4 reporting',
-                'FTP exports',
-                'Yoast SEO',
-                'PageSpeed audits',
-                'Navigation updates',
-              ].map((item) => (
-                <div key={item} className="rounded-xl border border-white/10 bg-[var(--surface)] px-3 py-4 text-sm text-zinc-300 text-center">{item}</div>
               ))}
             </div>
           </section>
@@ -296,9 +291,9 @@ export default function HomePage() {
                 <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Let’s build and improve the web.</h2>
                 <p className="text-sm text-zinc-400 mt-3">Santiago de los Caballeros, DR · US Eastern Time</p>
               </div>
-              {/* <a href="mailto:noelnew90@gmail.com" className="shrink-0 px-5 py-3 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-white transition">
+              { <a href="mailto:noelnew90@gmail.com" className="shrink-0 px-5 py-3 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-semibold hover:bg-white transition">
                 noelnew90@gmail.com
-              </a> */}
+              </a> }
             </div>
           </footer>
         </div>
